@@ -1,6 +1,6 @@
 const express = require('express');
 const logger = require('morgan');
-// const menuItemRouter = require('./routes/menu-item');
+ const menuItemRouter = require('./routes/menu-item');
 
 const app = express();
 const enableCors = (req, resp, next) => {
@@ -18,6 +18,6 @@ app.use(enableCors);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// app.use('/api/menu-items', menuItemRouter);
+ app.use('/api/menu-items', menuItemRouter);
 
 module.exports = app;

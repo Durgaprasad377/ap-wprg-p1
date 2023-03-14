@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "echo \"TODO build project into dist folder for production\" && exit 1",
-    "start:dev": "DEBUG=pbg-p2:* nodemon ./src/api/server"
+    "start:dev": "nodemon ./src/api/server"
   },
   "dependencies": {
     "debug": "~2.6.9",

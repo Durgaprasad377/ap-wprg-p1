@@ -1,3 +1,3 @@
-// exports.findAll = () => {
-//   return new Promise(resolve => resolve(menuItems));
-// };
+ exports.findAll = () => {
+   return new Promise(resolve => resolve(menuItems));
+ };
