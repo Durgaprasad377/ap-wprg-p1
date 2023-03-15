@@ -1,3 +1,4 @@
+require('dotenv').config();
 const app = require('./app');
 const debug = require('debug')('pbg-p2:server');
 const http = require('http');
