@@ -1,4 +1,4 @@
-const menuItems=[ "Hi world"];
+const menuItems=[ "Hi"];
 
 exports.findAll = () => {
    return new Promise(resolve => resolve(menuItems));

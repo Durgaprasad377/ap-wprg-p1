@@ -12,5 +12,14 @@ exports.getAll = (req, res, next) => {
 };
 
 exports.save = (req, res, next) => {
-  res.status(400).json("TODO")
+  console.log(req.body)
+  const menuItemRequested =req.body
+  const menuItem = new MenuItem({
+    "name": menuItemRequested.name,
+    "description": menuItemRequested.description,
+    "price": menuItemRequested.price,
+  })
+  menuItem.save().then(() =>
+    res.status(201).json({ message: "Menu item save successfully" })
+  )
 };
